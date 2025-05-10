@@ -34,14 +34,13 @@
 
 1. 创建虚拟环境
 ```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+conda create -n kong python=3.10
+conda activate kong 
 ```
 
 2. 安装依赖
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 3. 配置环境变量
